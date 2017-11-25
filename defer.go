@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
+	"net/http"
 )
 
 // main
-func main()  {
-	defer fmt.Println("world")
+func main() {
+	defer fmt.Pnrintln("world")
 	test()
 	fmt.Println("hello")
 }

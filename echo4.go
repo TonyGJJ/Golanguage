@@ -11,6 +11,7 @@ var sep = flag.String("s", " ", "separator")
 
 // main
 func main() {
+	fmt.Println("嘿嘿")
 	flag.Parse()
 	fmt.Print(strings.Join(flag.Args(), *sep))
 	if !*n {
