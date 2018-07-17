@@ -19,4 +19,16 @@ func main() {
 	a[1] = "World"
 	fmt.Println(a[0], a[1])
 	fmt.Println(a)
+
+	var s [3]int
+	fmt.Println(s[0])
+	fmt.Println(s[len(s)-1])
+
+	for i, v := range s {
+		fmt.Printf("%d %d\n", i, v)
+	}
+	// Print the elements only.
+	for _, v := range a {
+		fmt.Printf("%d\n", v)
+	}
 }
