@@ -17,7 +17,7 @@ func main() {
 }
 
 // hadleer ...
-func handler(w http.ResponseWriter, r *http.Request)  {
+func handler(w http.ResponseWriter, r *http.Request) {
 	mu.Lock()
 	count++
 	mu.Unlock()
@@ -25,7 +25,7 @@ func handler(w http.ResponseWriter, r *http.Request)  {
 }
 
 // counter echoes the number of calls so far
-func counter(w http.ResponseWriter, r *http.Request)  {
+func counter(w http.ResponseWriter, r *http.Request) {
 	mu.Lock()
 	fmt.Fprintf(w, "count %d\n", count)
 	mu.Unlock()
